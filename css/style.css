@@ -28,6 +28,7 @@
 }
 
 .search {
+    padding-left: 1.25em;
     position: relative;
 }
 
@@ -246,6 +247,11 @@
     flex-direction: column;
     justify-content: space-between;
     padding: .5em;
+}
+
+.img-container {
+    width: 9.3em;
+    height: 8.3em;
 }
 
 .titulo {
@@ -610,10 +616,6 @@ iframe {
         font-size: .7em;
     }
 
-    .logo-container {
-        display: none;
-    }
-
     .productos-container {
         width: 100%;
         display: grid;
@@ -657,11 +659,23 @@ iframe {
     }
 
     .grid-items {
-        width: 70%;
+        width: 60%;
     }
 
     .auto-selection {
         background-image: none;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .productos-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .producto {
+        align-items: center;
+        flex-direction: column;
     }
 }
 
