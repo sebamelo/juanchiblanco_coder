@@ -369,8 +369,6 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    border-top: 2px solid #0071bc;
-    border-bottom: 2px solid #0071bc;
     padding: 2rem 0;
     margin: 2rem 0;
 }
