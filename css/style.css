@@ -205,8 +205,12 @@
 
 /* Fin estilos banner */
 
-.left-banner, .right-banner  {
-    margin: 25px;
+.left-banner {
+    margin: 2rem;
+}
+
+.right-banner {
+    margin: 2rem;
 }
 
 /* Estilos productos */
@@ -231,6 +235,7 @@
 
 .contenido-principal {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-between;
     padding: .5em;
