@@ -274,7 +274,7 @@
     padding: 8rem 0;
     text-align: center;
     background-image: url(../images/gridcover.jpg);
-    background-size: contain;
+    background-size: cover;
 }
 
 .animate__backInLeft {
