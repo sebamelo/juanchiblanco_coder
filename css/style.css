@@ -139,7 +139,7 @@
 /* Estilos slider */
 
 .slider-container {
-    max-width: 99vw;
+    max-width: 100vw;
     overflow: hidden;
 }
 
@@ -151,7 +151,7 @@
 }
 
 .slides img {
-    width: 99vw;
+    width: 100vw;
 }
 
 @keyframes slider {
@@ -171,11 +171,13 @@
 .slider-pad {
     position: absolute;
     transform: translateY(-120%);
-    right: 50%;
+    right: 0;
+    left: 0;
 }
 
 .ol-slider {
     display: flex;
+    justify-content: center;
 }
 
 .ol-slider li {
@@ -201,31 +203,18 @@
 
 /* Estilos banners */
 
-.banner-container {
-    width: 20%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-self: center;
-}
-
-.first-banner {
-    display: flex;
-    flex-direction: column;
-}
-
-.first-banner img {
-    margin: .8em;
-}
-
 /* Fin estilos banner */
+
+.left-banner, .right-banner  {
+    margin: 25px;
+}
 
 /* Estilos productos */
 
 .productos-container {
     display: flex;
     flex-direction: column;
-    width: 80%;
+    width: 100%;
 }
 
 .producto {
@@ -634,7 +623,7 @@ iframe {
         width: 100%;
     }
 
-    .banner-container {
+    .left-banner, .right-banner {
         display: none;
     }
 
