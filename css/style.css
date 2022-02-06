@@ -4,6 +4,7 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
+    overflow-x: hidden;
 }
 
 .html {
@@ -147,7 +148,7 @@
 /* Estilos slider */
 
 .slider-container {
-    max-width: 100vw;
+    min-width: 100%;
     overflow: hidden;
 }
 
@@ -159,7 +160,7 @@
 }
 
 .slides img {
-    width: 100vw;
+    width: 100%;
 }
 
 @keyframes slider {
@@ -357,12 +358,26 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    background-image: url(../images/envio.jpg);
-    background-size: contain;
     border-top: 2px solid #0071bc;
     border-bottom: 2px solid #0071bc;
-    padding: 1rem;
+    padding: 2rem 0;
+    margin: 2rem 0;
 }
+
+.shipments-input {
+    font-family: 'Nunito', sans-serif;
+    width: 25rem;
+    border: 2px solid #aaa;
+    border-radius: 4px;
+    outline: none;
+    padding: .5em;
+    transition: .3s;
+}
+
+.shipments-input:focus {
+    border: 2px solid #012842;
+}
+
 
 .shipments-tittle {
     margin-bottom: 1rem;
@@ -381,40 +396,46 @@ iframe {
 /* Estilos Footer */
 
 .main-footer {
-    padding: 2rem 0 2rem 0;
     display: flex;
+    justify-content: space-around;
+    background-color: rgb(38, 38, 46);
+    font-family: 'Montserrat', serif;
+    color: #fff;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 13rem;
+}
+
+.logo-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.social-btns__footer {
+    display: flex;
+    width: 50%;
     justify-content: space-evenly;
 }
 
-.main-footer h4 {
-    font-family: 'Montserrat', sans-serif;
+.social-btns__footer > span > a {
+    color: #fff;
+    font-size: 1.4em;
 }
 
-.social {
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-}
 
-.p-footer {
-    font-family: 'Montserrat', sans-serif;
-    margin-top: 2rem;
-}
 
-.footer-tittle {
-    margin-bottom: 1rem;
-}
-
-.main-footer h5 {
-    font-family: 'Montserrat', sans-serif;
-    align-self: flex-end;
-}
-
-.redes {
-    font-family: 'Nunito', sans-serif;
-    color: black;
-    text-transform: uppercase;
-}
 
 /* Fin de estilos footer*/
 
@@ -665,6 +686,10 @@ iframe {
     .auto-selection {
         background-image: none;
     }
+
+    .animate__backInLeft {
+        color: #000;
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -676,6 +701,7 @@ iframe {
     .producto {
         align-items: center;
         flex-direction: column;
+        width: 50%;
     }
 }
 
