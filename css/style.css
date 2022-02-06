@@ -25,8 +25,8 @@
 }
 
 .search {
-    width: 30%;
-    padding-left: 1.25em;
+    width: 25%;
+    padding: 0 2.7rem;
     position: relative;
 }
 
@@ -50,7 +50,7 @@
 
 .search-icon {
     position: absolute;
-    right: 12px;
+    right: 50px;
     top: 16px;
     color: #000;
 }
