@@ -18,12 +18,14 @@
 .header-container {
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
     background-color: rgb(38, 38, 46);
 }
 
 .search {
+    width: 30%;
     padding-left: 1.25em;
     position: relative;
 }
@@ -31,7 +33,7 @@
 .search input {
     font-family: 'Nunito', sans-serif;
     position: relative;
-    width: 25rem;
+    width: 100%;
     border: 2px solid #aaa;
     border-radius: 4px;
     margin: .5em 0;
@@ -674,6 +676,16 @@ iframe {
     .slider-container {
         display: none;
     }
+    
+    .header-container{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .search {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 1138px) {
@@ -684,10 +696,6 @@ iframe {
     .left-banner, .right-banner {
         display: none;
     }
-
-    /*.productos-container {
-        width: 100%;
-    }*/
 }
 
 @media screen and (max-width: 1330px) {
