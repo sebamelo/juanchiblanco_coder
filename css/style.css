@@ -27,6 +27,10 @@
     background-color: rgb(38, 38, 46);
 }
 
+.search {
+    position: relative;
+}
+
 .search input {
     font-family: 'Nunito', sans-serif;
     position: relative;
@@ -45,8 +49,11 @@
     transition: .3s;
 }
 
-.search span {
-    color: #fff;
+.search-icon {
+    position: absolute;
+    right: 12px;
+    top: 16px;
+    color: #000;
 }
 
 .social-buttons {
