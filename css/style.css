@@ -208,6 +208,16 @@
     margin: 2rem;
 }
 
+.left-banner img {
+    position: sticky;
+    top: 0;
+}
+
+.right-banner img {
+    position: sticky;
+    top: 0;
+}
+
 /* Estilos productos */
 
 .productos-container {
@@ -420,14 +430,9 @@ iframe {
     font-size: 1.4em;
 }
 
-
-
-
 /* Fin de estilos footer*/
 
 /* Final de estilos para index.html */
-
-
 
 /* Estilos para armatupc.html */
 
