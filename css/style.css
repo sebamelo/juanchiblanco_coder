@@ -4,7 +4,6 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
-    overflow-x: hidden;
 }
 
 .html {
@@ -14,14 +13,10 @@
 
 /* Header Styles */
 
-.main-header {
-    position: sticky;
-    top: -68px;
-}
-
 /* Estilos logo */
 
 .header-container {
+    width: 100%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -133,22 +128,13 @@
     transition: .4s;
 }
 
-.btn-menu {
-    font-size: 1.2rem;
-    color: #000;
-    display: none;
-}
-
-.main-nav input {
-    display: none;
-}
 
 /* Fin estilos para header */
 
 /* Estilos slider */
 
 .slider-container {
-    min-width: 100%;
+    max-width: 99vw;
     overflow: hidden;
 }
 
@@ -160,7 +146,7 @@
 }
 
 .slides img {
-    width: 100%;
+    width: 99vw;
 }
 
 @keyframes slider {
@@ -206,7 +192,7 @@
 /* Main */
 .main-section {
     display: flex;
-    overflow: hidden;
+    justify-content: center;
 }
 /* Main */
 
@@ -226,14 +212,15 @@
 
 .productos-container {
     display: flex;
+    align-items: center;
     flex-direction: column;
-    width: 100%;
 }
 
 .producto {
+    width: 80%;
     display: flex;
     justify-content: center;
-    margin: 1rem auto;
+    margin: 1rem;
     padding: .5em;
     box-shadow: 0px 5px 9px 2px rgba(156,156,156,1);
     -webkit-box-shadow: 0px 5px 9px 2px rgba(156,156,156,1);
@@ -244,15 +231,14 @@
 
 .contenido-principal {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-between;
     padding: .5em;
 }
 
 .img-container {
-    width: 9.3em;
-    height: 8.3em;
+    width: 150px;
+    height: 134px;
 }
 
 .titulo {
@@ -644,6 +630,7 @@ iframe {
         grid-template-rows: repeat(4, 1fr);
         grid-column-gap: 0px;
         grid-row-gap: 0px;
+        justify-items: center;
     }
 }
 
@@ -662,9 +649,9 @@ iframe {
         display: none;
     }
 
-    .productos-container {
+    /*.productos-container {
         width: 100%;
-    }
+    }*/
 }
 
 @media screen and (max-width: 1330px) {
