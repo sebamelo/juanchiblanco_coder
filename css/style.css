@@ -677,6 +677,34 @@ iframe {
     width: 30rem;
 }
 
+.intel-container{
+    border-radius: 4px;
+    transition: all 0.2s ease-out;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    top:0
+}
+
+.intel-container:hover{
+    box-shadow: 0 6px 10px 0 rgb(0 0 0 / 33%);
+    top: -6px;
+}
+
+.amd-container{
+    border-radius: 4px;
+    transition: all 0.2s ease-out;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    top: 0
+}
+
+.amd-container:hover{
+    box-shadow: 0 6px 10px 0 rgb(0 0 0 / 33%);
+    top: -6px;
+}
+
 
 /* Responsive */
 
