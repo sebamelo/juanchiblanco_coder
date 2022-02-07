@@ -474,9 +474,31 @@ iframe {
     text-align: center;
 }
 
+.guia {
+    display: flex;
+    justify-content: center;
+    margin: 3rem;
+    font-family: 'Crete Round', serif;
+    font-size: 1.5em;
+}
+
 .image-container {
     display: flex;
     justify-content: center;
+}
+
+
+
+.image-amd {
+    margin: 1em;
+    padding: 2em;
+    background-image: url(../images/back_amd.png);
+}
+
+.image-intel {
+    margin: 1em;
+    padding: 2em;
+    background-image: url(../images/back_intel.png);
 }
 
 .image-container img {
@@ -484,7 +506,7 @@ iframe {
 }
 
 .presentation-title {
-    padding: 5em 0 1em 0;
+    padding: 1.4em 0 1em 0;
     text-align: center;
     font-family: 'Nunito', sans-serif;
     font-size: 1.6em;
@@ -518,6 +540,19 @@ iframe {
     padding: 1rem;
 }
 
+.box-cont {
+    border-radius: 4px;
+    transition: all 0.2s ease-out;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    top:0
+}
+
+.box-cont:hover{
+    box-shadow: 0 6px 10px 0 rgb(0 0 0 / 33%);
+    top: -6px;
+}
 
 
 /* AMD */
@@ -677,87 +712,7 @@ iframe {
     width: 30rem;
 }
 
-.intel-container{
-    border-radius: 4px;
-    transition: all 0.2s ease-out;
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
-    top:0
-}
-
-.intel-container:hover{
-    box-shadow: 0 6px 10px 0 rgb(0 0 0 / 33%);
-    top: -6px;
-}
-
-.amd-container{
-    border-radius: 4px;
-    transition: all 0.2s ease-out;
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
-    top: 0
-}
-
-.amd-container:hover{
-    box-shadow: 0 6px 10px 0 rgb(0 0 0 / 33%);
-    top: -6px;
-}
-
-
 /* Responsive */
-
-
-@media screen and (max-width: 985px) {
-    .main-nav {
-        border: none;
-    }
-
-    .nav-list {
-        padding: .8rem;
-    }
-
-    .nav-list-item {
-        font-size: .7em;
-    }
-
-    .productos-container {
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(4, 1fr);
-        grid-column-gap: 0px;
-        grid-row-gap: 0px;
-        justify-items: center;
-    }
-}
-
-@media screen and (max-width: 730px) {
-    .slider-container {
-        display: none;
-    }
-    
-    .header-container{
-        display: none;
-    }
-}
-
-@media screen and (max-width: 450px) {
-    .search {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 1138px) {
-    .nav-list {
-        width: 100%;
-    }
-
-    .left-banner, .right-banner {
-        display: none;
-    }
-}
 
 @media screen and (max-width: 1330px) {
     .grid-ul {
@@ -784,6 +739,79 @@ iframe {
     }
 }
 
+
+@media screen and (max-width: 985px) {
+    .main-nav {
+        border: none;
+    }
+
+    .nav-list {
+        padding: .8rem;
+    }
+
+    .nav-list-item {
+        font-size: .7em;
+    }
+
+    .productos-container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        justify-items: center;
+    }
+}
+
+@media screen and (max-width: 1138px) {
+    .nav-list {
+        width: 100%;
+    }
+
+    .left-banner, .right-banner {
+        display: none;
+    }
+
+    .intel-description, .amd-description {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contain {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .title__container {
+        align-items: center;
+    }
+
+    .title__container p {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 730px) {
+    .slider-container {
+        display: none;
+    }
+    
+    .social-buttons, .contacto {
+        display: none;
+    }
+
+    .header-container {
+        display: inline-block;
+        text-align: center;
+    }
+
+    .search {
+        width: 100%;
+    }
+
+}
+
 @media screen and (max-width: 500px) {
     .productos-container {
         display: flex;
@@ -794,6 +822,10 @@ iframe {
         align-items: center;
         flex-direction: column;
         width: 50%;
+    }
+
+    .header-container {
+        display: none;
     }
 }
 
