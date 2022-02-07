@@ -476,13 +476,48 @@ iframe {
 
 .image-container {
     display: flex;
-    flex-direction: row;
     justify-content: center;
 }
 
 .image-container img {
-    margin: 1rem 1rem;
+    margin: 1rem 1rem 3rem 1rem;
 }
+
+.presentation-title {
+    padding: 5em 0 1em 0;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.6em;
+}
+
+.img__container img {
+    width: 10em;
+    height: 10em;
+}
+
+.intel-description, .amd-description {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    justify-items: center;
+    margin: 3rem;
+}
+
+.contain {
+    padding: 2rem;
+    display: flex;
+}
+
+.title__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-family: 'Montserrat', sans-serif;
+    padding: 1rem;
+}
+
 
 
 /* AMD */
