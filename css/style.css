@@ -149,19 +149,21 @@
 /* Estilos slider */
 
 .slider-container {
-    max-width: 99vw;
+    width: 100vw;
     overflow: hidden;
 }
 
 .slides {
     display: flex;
+    padding: 0;
     width: 400%;
+    overflow: hidden;
     animation: slider 18s infinite alternate;
     animation-timing-function: ease-out;
 }
 
 .slides img {
-    width: 99vw;
+    width: 100vw; 
 }
 
 @keyframes slider {
