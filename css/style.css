@@ -9,6 +9,8 @@
 .html {
     width: fit-content;
     min-width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 /* Header Styles */
@@ -201,7 +203,7 @@
 }
 
 .ol-slider li:hover {
-    background: #fff;
+    background: #0071bc;
 }
 
 /* Fin Slider */
