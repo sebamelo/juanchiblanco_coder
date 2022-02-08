@@ -18,7 +18,7 @@
 /* Estilos logo */
 
 .header-container {
-    width: 100%;
+    min-width: 100vw;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -100,6 +100,7 @@
 }
 
 .contacto {
+    font-family: 'Roboto', sans-serif;
     display: flex;
     padding: 1em;
 }
@@ -111,6 +112,29 @@
 .contacto span, label {
     color: #fff;
 }
+
+.contacto span {
+    display: flex;
+}
+
+.contacto span .ring {
+    animation: shake 2.5s infinite;
+}
+
+@keyframes shake {
+    0% {transform: translate(1px, 1px) rotate(0deg);}
+    10% {transform: translate(-1px, -2px) rotate(-1deg);}
+    20% {transform: translate(-3px, 0px) rotate(1deg);}
+    30% {transform: translate(3px, 2px) rotate(0deg);}
+    40% {transform: translate(1px, -1px) rotate(1deg);}
+    50% {transform: translate(-1px, 2px) rotate(-1deg);}
+    60% {transform: translate(-3px, 1px) rotate(0deg);}
+    70% {transform: translate(3px, 1px) rotate(-1deg);}
+    80% {transform: translate(-1px, -1px) rotate(1deg);}
+    90% {transform: translate(1px, 2px) rotate(0deg);}
+    100% {transform: translate(1px, -2px) rotate(-1deg);}
+}
+
 
 /* */
 
@@ -151,7 +175,6 @@
 /* Estilos slider */
 
 .slider-container {
-    width: 100vw;
     overflow: hidden;
 }
 
@@ -159,7 +182,6 @@
     display: flex;
     padding: 0;
     width: 400%;
-    overflow: hidden;
     animation: slider 18s infinite alternate;
     animation-timing-function: ease-out;
 }
@@ -343,7 +365,8 @@
     border-radius: 0px 20px 20px 20px;
     -webkit-border-radius: 0px 20px 20px 20px;
     -moz-border-radius: 0px 20px 20px 20px;
-    background: #dfebf0;
+    background: #fff;
+    opacity: 0.8;
     border: 1px solid #000;
 }
 
@@ -473,7 +496,7 @@ iframe {
 /* Estilos para armatupc.html */
 
 .arma-tupc h1 {
-    font-family: 'Crete Round', serif;
+    font-family: 'Roboto', sans-serif;
     margin: 1rem 0 2rem 0;
     text-align: center;
 }
@@ -482,7 +505,7 @@ iframe {
     display: flex;
     justify-content: center;
     margin: 3rem;
-    font-family: 'Crete Round', serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 1.5em;
 }
 
@@ -490,8 +513,6 @@ iframe {
     display: flex;
     justify-content: center;
 }
-
-
 
 .image-amd {
     margin: 1em;
@@ -506,7 +527,7 @@ iframe {
 }
 
 .image-container img {
-    margin: 1rem 1rem 3rem 1rem;
+    padding: 2em;
 }
 
 .presentation-title {
@@ -758,7 +779,6 @@ iframe {
     }
 
     .productos-container {
-        width: 100%;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(4, 1fr);
